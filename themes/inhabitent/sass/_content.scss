@@ -47,3 +47,24 @@
 .bypostauthor {
 	display: block;
 }
+
+.hfeed.site {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.site-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content-area {
+	padding: 50px 50px;
+	margin-left: 250px;
+}
+
+.widget-area {
+	border-left: 1px solid $color__border-abbr;
+	padding: 50px 50px;
+	margin-right: 300px;
+}

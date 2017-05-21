@@ -26,3 +26,10 @@ themes/inhabitent/node_modules/
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
+
+# Ignore logs and databases #
+*.log
+*.sql
+*.sqlite
+error_log
+access_log
