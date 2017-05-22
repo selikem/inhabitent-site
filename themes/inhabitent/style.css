@@ -273,7 +273,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "merriweather";
+  font-family: "merriweather", Courier, monospace;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -281,7 +281,7 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "novocento"; }
+  font-family: "novocento", Courier, monospace; }
 
 /* Copy */
 p {
@@ -322,6 +322,18 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+a {
+  text-decoration: none; }
+
+.main-navigation {
+  font-family: "novocento", Courier, monospace;
+  font-size: 19.2px;
+  font-size: 1.2rem; }
+
+.entry-meta {
+  font-family: "novocento", Courier, monospace;
+  text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -451,19 +463,20 @@ textarea {
 --------------------------------------------------------------*/
 .site-header {
   width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border-bottom: 1px solid #666; }
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 3;
+  padding: 0.5rem 0; }
 
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
-    color: purple; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #248A83; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -473,8 +486,7 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  width: 100%;
-  font-family: "novocento"; }
+  width: 100%; }
   .main-navigation .menu {
     width: 100%;
     height: 100%; }
@@ -488,7 +500,7 @@ a {
     -ms-flex-align: center;
         align-items: center;
     position: relative;
-    right: 300px; }
+    right: 20rem; }
   .main-navigation .menu ul li {
     margin: 5px 20px; }
   .main-navigation ul {
@@ -610,14 +622,21 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
+  margin: 3.4rem 0 1.5rem;
+  line-height: 2.5rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+  .widget li {
+    padding-left: 1.3rem; }
 
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+.widget_archive ul {
+  display: inline;
+  list-style: none; }
 
 /*--------------------------------------------------------------
 # Content
@@ -657,12 +676,6 @@ a {
 .bypostauthor {
   display: block; }
 
-.hfeed.site {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
 .site-content {
   display: -ms-flexbox;
   display: flex;
@@ -671,12 +684,46 @@ a {
 
 .content-area {
   padding: 50px 50px;
-  margin-left: 250px; }
+  margin-left: 15rem; }
+
+.type-post .entry-header {
+  position: relative;
+  color: #fff;
+  margin: 3rem 0; }
+  .type-post .entry-header img {
+    width: 100%;
+    height: 100%; }
+  .type-post .entry-header a {
+    color: #fff;
+    text-decoration: none; }
+  .type-post .entry-header .entry-title {
+    position: absolute;
+    top: 6px;
+    background-color: #248A83;
+    padding: 5px 50px 5px 20px;
+    max-width: 75%;
+    font-size: 35.2px;
+    font-size: 2.2rem; }
+  .type-post .entry-header .entry-meta {
+    position: absolute;
+    bottom: 6px;
+    right: 0px;
+    background-color: #248A83;
+    padding: 5px 20px; }
+
+.cat-links, .tags-links {
+  font-family: "novocento", Courier, monospace;
+  text-transform: uppercase;
+  margin-right: 2rem; }
 
 .widget-area {
-  border-left: 1px solid #666;
-  padding: 50px 50px;
-  margin-right: 300px; }
+  border-left: 1px solid #e1e1e1;
+  width: 100%;
+  padding: 0px 50px;
+  margin-right: 13rem;
+  margin-top: 3rem; }
+  .widget-area h2 {
+    text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Media

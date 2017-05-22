@@ -17,7 +17,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	font-family: $font_accent;
+	font-family: $font__accent;
 }
 
 /* Copy */
@@ -66,4 +66,18 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation {
+	font-family: $font__accent;
+	@include font-size(1.2);
+}
+
+.entry-meta {
+	font-family: $font__accent;
+	text-transform: uppercase;
 }

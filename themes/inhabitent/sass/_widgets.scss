@@ -3,15 +3,27 @@
 --------------------------------------------------------------*/
 
 .widget {
-	margin: 0 0 $base__space-unit;
+	margin: 3.4rem 0 $base__space-unit;
+	line-height: 2.5rem;
 
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
+	}
+	li{
+		padding-left: 1.3rem;
 	}
 }
 
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
+}
+
+
+.widget_archive {
+	ul {
+		display: inline;
+		list-style: none;
+	}
 }
