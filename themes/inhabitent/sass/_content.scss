@@ -54,9 +54,11 @@
 	justify-content: space-between;
 }
 
-.content-area {
-	padding: 4rem;
-	margin-left: 15rem;
+.post , .post-12 {
+	padding-top: 3rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	margin-left: 13rem;
 }
 
 .type-post {
@@ -103,7 +105,7 @@
 	border-left: $border_solid;
 	width: 100%;
 	padding: 0 4rem;
-	margin-right: 13rem;
+	margin-right: 6rem;
 	margin-top: 3rem;
 	
 	h2 {
@@ -115,4 +117,34 @@
 	background: url('../../images/dark-wood.png');
 	height: 10rem;
 	width: 100%;
+}
+
+.post-9 {
+	h1, h2 {
+		text-align: center;
+	}
+	.entry-content {
+		margin: 0 28rem;
+	}
+	
+	.custom-hero {
+		color: $brand_white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		height: 100vh;
+	}
+}
+
+.product-grid {
+	display: flex;
+	flex-basis: 25%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+.archive-container {
+	margin: 4rem 18rem;
 }

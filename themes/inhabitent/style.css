@@ -328,8 +328,8 @@ a {
 
 .main-navigation {
   font-family: "novocento", Courier, monospace;
-  font-size: 19.2px;
-  font-size: 1.2rem; }
+  font-size: 17.6px;
+  font-size: 1.1rem; }
 
 .entry-meta {
   font-family: "novocento", Courier, monospace;
@@ -465,10 +465,14 @@ textarea {
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
-  top: 0;
+  top: 30px;
   background-color: rgba(255, 255, 255, 0.85);
   z-index: 3;
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 /* Links */
 a {
@@ -485,10 +489,8 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  width: 100%; }
+  display: block; }
   .main-navigation .menu-primary-menu-container {
-    width: 100%;
     height: 100%; }
   .main-navigation .menu-primary-menu-container ul {
     display: -ms-flexbox;
@@ -560,6 +562,26 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.site-branding .logo {
+  background: url("../../images/inhabitent-logo-tent.svg") no-repeat;
+  background-size: 50px 33px;
+  height: 33px;
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  left: 17rem; }
+
+.page-template-page-about .site-header {
+  background: transparent;
+  border: 0px solid #000; }
+  .page-template-page-about .site-header a {
+    color: #fff; }
+
+.page-template-page-about .site-branding .logo {
+  background: url("../../images/inhabitent-logo-tent-white.svg") no-repeat;
+  background-size: 50px 33px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -682,9 +704,11 @@ a {
   -ms-flex-pack: justify;
       justify-content: space-between; }
 
-.content-area {
-  padding: 4rem;
-  margin-left: 15rem; }
+.post, .post-12 {
+  padding-top: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-left: 13rem; }
 
 .type-post .entry-header {
   position: relative;
@@ -722,7 +746,7 @@ a {
   border-left: 1px solid #e1e1e1;
   width: 100%;
   padding: 0 4rem;
-  margin-right: 13rem;
+  margin-right: 6rem;
   margin-top: 3rem; }
   .widget-area h2 {
     text-transform: uppercase; }
@@ -731,6 +755,37 @@ a {
   background: url("../../images/dark-wood.png");
   height: 10rem;
   width: 100%; }
+
+.post-9 h1, .post-9 h2 {
+  text-align: center; }
+
+.post-9 .entry-content {
+  margin: 0 28rem; }
+
+.post-9 .custom-hero {
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100vh; }
+
+.product-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.archive-container {
+  margin: 4rem 18rem; }
 
 /*--------------------------------------------------------------
 # Media
