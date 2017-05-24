@@ -55,7 +55,7 @@
 }
 
 .content-area {
-	padding: 50px 50px;
+	padding: 4rem;
 	margin-left: 15rem;
 }
 
@@ -71,6 +71,9 @@
 		a {
 			color: $brand_white;
 			text-decoration: none;
+			&:hover {
+				color: $brand_yellow;
+			}
 		}
 		.entry-title {
 			position: absolute;
@@ -78,7 +81,7 @@
 			background-color: $brand_green;
 			padding: 5px 50px 5px 20px;
 			max-width: 75%;
-			@include font-size(2.2);
+			@include font-size(2.3);
 		}
 		.entry-meta {
 			position: absolute;
@@ -99,11 +102,17 @@
 .widget-area {
 	border-left: $border_solid;
 	width: 100%;
-	padding: 0px 50px;
+	padding: 0 4rem;
 	margin-right: 13rem;
 	margin-top: 3rem;
 	
 	h2 {
 		text-transform: uppercase;
 	}
+}
+
+.site-footer {
+	background: url('../../images/dark-wood.png');
+	height: 10rem;
+	width: 100%;
 }

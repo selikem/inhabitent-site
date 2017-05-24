@@ -476,7 +476,7 @@ a {
   a:visited {
     color: #248A83; }
   a:hover, a:focus, a:active {
-    color: #248A83; }
+    color: midnightblue; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -487,10 +487,10 @@ a {
   clear: both;
   display: block;
   width: 100%; }
-  .main-navigation .menu {
+  .main-navigation .menu-primary-menu-container {
     width: 100%;
     height: 100%; }
-  .main-navigation .menu ul {
+  .main-navigation .menu-primary-menu-container ul {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
@@ -501,7 +501,7 @@ a {
         align-items: center;
     position: relative;
     right: 20rem; }
-  .main-navigation .menu ul li {
+  .main-navigation .menu-primary-menu-container ul li {
     margin: 5px 20px; }
   .main-navigation ul {
     display: none;
@@ -683,7 +683,7 @@ a {
       justify-content: space-between; }
 
 .content-area {
-  padding: 50px 50px;
+  padding: 4rem;
   margin-left: 15rem; }
 
 .type-post .entry-header {
@@ -696,14 +696,16 @@ a {
   .type-post .entry-header a {
     color: #fff;
     text-decoration: none; }
+    .type-post .entry-header a:hover {
+      color: #f0e4d1; }
   .type-post .entry-header .entry-title {
     position: absolute;
     top: 6px;
     background-color: #248A83;
     padding: 5px 50px 5px 20px;
     max-width: 75%;
-    font-size: 35.2px;
-    font-size: 2.2rem; }
+    font-size: 36.8px;
+    font-size: 2.3rem; }
   .type-post .entry-header .entry-meta {
     position: absolute;
     bottom: 6px;
@@ -719,11 +721,16 @@ a {
 .widget-area {
   border-left: 1px solid #e1e1e1;
   width: 100%;
-  padding: 0px 50px;
+  padding: 0 4rem;
   margin-right: 13rem;
   margin-top: 3rem; }
   .widget-area h2 {
     text-transform: uppercase; }
+
+.site-footer {
+  background: url("../../images/dark-wood.png");
+  height: 10rem;
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Media
