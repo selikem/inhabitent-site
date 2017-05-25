@@ -123,14 +123,48 @@
 }
 
 .site-footer {
+	height: 22rem;
 	background: url('../../images/dark-wood.png');
-	height: 10rem;
 	width: 100vw;
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.footer-copyright {
+		text-align: center;
+		color: $brand_white;
+		font-family: $font__accent;
+		text-transform: uppercase;
+	}
+	.footer-container {
+		height: 80%;
+		width: 70%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.site-logo {}
+		.secondary {
+			display: flex;
+			justify-content: space-around;
+			width: 50%;
+			color: $brand_white;
+			i {
+				font-size: 1.2rem;
+			}
+			a {
+				color: $brand_white;
+			}
+			h3 {
+				color: $brand_orange;
+			}
+		}
+
+	}
 }
+
 
 .page-template-about .site-content, .page-id-5 .site-content {
 	width: 100%;
+
 	section {
 		width: 70%;
 	}
@@ -141,6 +175,7 @@
 	}
 }
 
+
 .tax-product-type .site-content {
 	width: auto;
 	margin: 0;
@@ -149,12 +184,13 @@
 .post-9 {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 	h1, h2 {
 		text-align: center;
 	}
 	.entry-content {
 		margin: 0 0;
+		width: 70%;
 	}
 	
 	.custom-hero {
@@ -164,6 +200,7 @@
 		justify-content: center;
 		align-content: center;
 		height: 100vh;
+		width: 100vw;
 	}
 }
 

@@ -402,17 +402,15 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  border: none;
+  border-radius: 0;
+  background: #248A83;
+  color: #fff;
+  font-size: 0.9rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -648,6 +646,9 @@ a {
     max-width: 100%; }
   .widget li {
     padding-left: 1.3rem; }
+  .widget .contact-field span {
+    position: relative;
+    left: 0.5rem; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -756,10 +757,42 @@ a {
     text-transform: uppercase; }
 
 .site-footer {
+  height: 22rem;
   background: url("../../images/dark-wood.png");
-  height: 10rem;
   width: 100vw;
-  position: relative; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .site-footer .footer-copyright {
+    text-align: center;
+    color: #fff;
+    font-family: "novocento", Courier, monospace;
+    text-transform: uppercase; }
+  .site-footer .footer-container {
+    height: 80%;
+    width: 70%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center; }
+    .site-footer .footer-container .secondary {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      width: 50%;
+      color: #fff; }
+      .site-footer .footer-container .secondary i {
+        font-size: 1.2rem; }
+      .site-footer .footer-container .secondary a {
+        color: #fff; }
+      .site-footer .footer-container .secondary h3 {
+        color: #d99054; }
 
 .page-template-about .site-content, .page-id-5 .site-content {
   width: 100%; }
@@ -782,12 +815,13 @@ a {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  -ms-flex-align: center;
+      align-items: center; }
   .post-9 h1, .post-9 h2 {
     text-align: center; }
   .post-9 .entry-content {
-    margin: 0 0; }
+    margin: 0 0;
+    width: 70%; }
   .post-9 .custom-hero {
     color: #fff;
     display: -ms-flexbox;
@@ -798,7 +832,8 @@ a {
         justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
-    height: 100vh; }
+    height: 100vh;
+    width: 100vw; }
 
 .product-grid {
   display: -ms-flexbox;
