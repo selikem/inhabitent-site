@@ -654,6 +654,7 @@ a {
   display: none; }
 
 .widget_archive ul {
+  margin: 0;
   display: inline;
   list-style: none; }
 

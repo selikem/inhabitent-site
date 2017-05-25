@@ -13,7 +13,10 @@ get_header(); ?>
             <?php if ( have_posts() ) : ?>
 
                 <header class="page-header">
-                    <h1>Shop Stuff</h1>
+                    <?php
+                        the_archive_title( '<h1 class="page-title">', '</h1>' );
+                        the_archive_description( '<div class="taxonomy-description">', '</div>' );
+                    ?>
                     <ul class="term-list">
                         <?php $product_types = get_terms(array('taxonomy' => 'product-type', 'hide_empty' => 0));
                         if(!empty($product_types)&& !is_wp_error($product_types)) :?>
