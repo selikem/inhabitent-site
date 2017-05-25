@@ -14,16 +14,10 @@ get_header(); ?>
 
                 <header class="page-header">
                     <h1>Shop Stuff</h1>
-                    <ul class="term-list">
-                        <?php $product_types = get_terms(array('taxonomy' => 'product-type', 'hide_empty' => 0));
-                        if(!empty($product_types)&& !is_wp_error($product_types)) :?>
-                            <?php foreach($product_types as $product_type) :?>
-                                <li class="term-link">
-                                    <a  href="<?php echo get_term_link($product_type);?>"><?php echo $product_type->name?></a>
-                                </li>
-                            <?php endforeach;?>
-                        <?php endif; ?>
-                    </ul>
+                    <?php $product_types = get_terms(array('taxonomy' => 'product-type', 'hide_empty' => 0));
+                    if(!empty($product_types)&& !is_wp_error($product_types)) :?>
+                        <?php echo $product_types[0]->description?>
+                    <?php endif; ?>
                 </header><!-- .page-header -->
                 <div class="product-grid">
                     <?php /* Start the Loop */ ?>

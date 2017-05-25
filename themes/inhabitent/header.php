@@ -22,7 +22,7 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-					<div class="logo"><a href=<?php bloginfo('url') ?>></a></div>
+					<div class="logo"><a href=<?php bloginfo('url') ?> rel="home"><h1 class="site-title">Inhabitent</h1></a></div>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">

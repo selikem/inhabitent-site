@@ -3,13 +3,14 @@
 --------------------------------------------------------------*/
 
 .site-header {
-	width: 100%;
 	border-bottom: $border_solid;
 	position: fixed;
-	top: 30px;
+	top: 33px;
+	left: 0;
+	right: 0;
 	background-color: hsla(0,0%,100%,.85);
 	z-index: 3;
-	padding: 0.5rem 0;
+	padding: 0.5rem 17rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -50,9 +51,7 @@ a {
 		width: 100%;
 		height: 100%;
 		justify-content: flex-end;
-		align-items: center;
-		position: relative;
-		right: 20rem;	
+		align-items: center;	
 	}
 
 	.menu-primary-menu-container ul li {
@@ -166,13 +165,12 @@ a {
 		width: 50px;
 		white-space: nowrap;
 		overflow: hidden;
-		position: relative;
-		left: 17rem;
+
 	}
 }
 
 
-.page-template-page-about {
+.page-template-about, .page-id-5 {
 	.site-header {
 		a {
 			color: $brand_white;

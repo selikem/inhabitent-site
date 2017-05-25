@@ -462,13 +462,14 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 .site-header {
-  width: 100%;
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
-  top: 30px;
+  top: 33px;
+  left: 0;
+  right: 0;
   background-color: rgba(255, 255, 255, 0.85);
   z-index: 3;
-  padding: 0.5rem 0;
+  padding: 0.5rem 17rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -500,9 +501,7 @@ a {
     -ms-flex-pack: end;
         justify-content: flex-end;
     -ms-flex-align: center;
-        align-items: center;
-    position: relative;
-    right: 20rem; }
+        align-items: center; }
   .main-navigation .menu-primary-menu-container ul li {
     margin: 5px 20px; }
   .main-navigation ul {
@@ -569,17 +568,15 @@ a {
   height: 33px;
   width: 50px;
   white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  left: 17rem; }
+  overflow: hidden; }
 
-.page-template-page-about .site-header {
+.page-template-about .site-header, .page-id-5 .site-header {
   background: transparent;
   border: 0px solid #000; }
-  .page-template-page-about .site-header a {
+  .page-template-about .site-header a, .page-id-5 .site-header a {
     color: #fff; }
 
-.page-template-page-about .site-branding .logo {
+.page-template-about .site-branding .logo, .page-id-5 .site-branding .logo {
   background: url("../../images/inhabitent-logo-tent-white.svg") no-repeat;
   background-size: 50px 33px; }
 
@@ -698,17 +695,24 @@ a {
 .bypostauthor {
   display: block; }
 
+.site {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 .site-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  width: 1150px; }
 
 .post, .post-12 {
   padding-top: 3rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  margin-left: 13rem; }
+  padding-right: 4rem; }
 
 .type-post .entry-header {
   position: relative;
@@ -746,7 +750,6 @@ a {
   border-left: 1px solid #e1e1e1;
   width: 100%;
   padding: 0 4rem;
-  margin-right: 6rem;
   margin-top: 3rem; }
   .widget-area h2 {
     text-transform: uppercase; }
@@ -754,25 +757,47 @@ a {
 .site-footer {
   background: url("../../images/dark-wood.png");
   height: 10rem;
+  width: 100vw;
+  position: relative; }
+
+.page-template-about .site-content, .page-id-5 .site-content {
   width: 100%; }
+  .page-template-about .site-content section, .page-id-5 .site-content section {
+    width: 70%; }
+  .page-template-about .site-content .site-main, .page-id-5 .site-content .site-main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
 
-.post-9 h1, .post-9 h2 {
-  text-align: center; }
+.tax-product-type .site-content {
+  width: auto;
+  margin: 0; }
 
-.post-9 .entry-content {
-  margin: 0 28rem; }
-
-.post-9 .custom-hero {
-  color: #fff;
+.post-9 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  height: 100vh; }
+      justify-content: center; }
+  .post-9 h1, .post-9 h2 {
+    text-align: center; }
+  .post-9 .entry-content {
+    margin: 0 0; }
+  .post-9 .custom-hero {
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 100vh; }
 
 .product-grid {
   display: -ms-flexbox;
@@ -783,9 +808,105 @@ a {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .product-grid .thumbnail-wrapper {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    background-color: #a1a1a1; }
+    .product-grid .thumbnail-wrapper .wp-post-image {
+      max-height: 250px;
+      max-width: none;
+      width: auto;
+      transform: translate(-50%, -52%);
+      position: absolute;
+      top: 50%;
+      left: 50%; }
+  .product-grid .product-info {
+    padding: 0.75rem 1rem;
+    width: 250px;
+    font-size: 14.4px;
+    font-size: 0.9rem;
+    border: 1px solid #e1e1e1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center; }
+    .product-grid .product-info a {
+      color: #404040; }
 
 .archive-container {
-  margin: 4rem 18rem; }
+  margin: 4rem 0; }
+
+.page-header h1 {
+  text-align: center; }
+
+.site-content .black-btn, .site-content .read-more {
+  border: 1px solid #000;
+  color: #000;
+  padding: 0.5rem 1rem; }
+  .site-content .black-btn a, .site-content .read-more a {
+    color: #000; }
+  .site-content .black-btn:hover, .site-content .black-btn:active, .site-content .black-btn:focus, .site-content .read-more:hover, .site-content .read-more:active, .site-content .read-more:focus {
+    background: #248A83;
+    border: 1px solid #248A83;
+    color: #fff; }
+
+.home-hero {
+  height: 100vh;
+  width: 100vw !important;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.latest-entries ul {
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0; }
+
+.latest-entries li {
+  border: 1px solid #e1e1e1;
+  -ms-flex: 1 0 32%;
+      flex: 1 0 32%; }
+
+.latest-entries .thumbnail-wrapper {
+  height: 250px;
+  position: relative;
+  background-color: #a1a1a1;
+  overflow: hidden; }
+  .latest-entries .thumbnail-wrapper img {
+    max-height: 250px;
+    max-width: none;
+    width: auto;
+    transform: translate(-50%, -52%);
+    position: absolute;
+    top: 50%;
+    left: 50%; }
+
+.archive-container .page-header {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem; }
+
+.term-list {
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1rem 0; }
+
+.tax-product-type .product-grid .product-grid-item {
+  margin: 0 1.2rem; }
 
 /*--------------------------------------------------------------
 # Media
