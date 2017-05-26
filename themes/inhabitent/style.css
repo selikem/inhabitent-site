@@ -713,7 +713,8 @@ a {
   width: 1150px; }
 
 .post, .post-12 {
-  padding-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-right: 4rem; }
 
 .type-post .entry-header {
@@ -742,6 +743,9 @@ a {
     right: 0px;
     background-color: #248A83;
     padding: 5px 20px; }
+
+.single-post .widget-area {
+  width: 140%; }
 
 .cat-links, .tags-links {
   font-family: "novocento", Courier, monospace;
@@ -780,6 +784,9 @@ a {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center; }
+    .site-footer .footer-container .site-logo img {
+      height: 50px;
+      width: 280px; }
     .site-footer .footer-container .secondary {
       display: -ms-flexbox;
       display: flex;
@@ -931,15 +938,25 @@ a {
 
 .archive-container .page-header {
   border-bottom: 1px dashed #c8c8c8;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .term-list {
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 1rem 0; }
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 1rem 0;
+  width: 30%;
+  text-transform: uppercase;
+  font-family: "novocento", Courier, monospace;
+  font-size: 1.1rem; }
 
 .tax-product-type .product-grid .product-grid-item {
   margin: 0 1.2rem; }

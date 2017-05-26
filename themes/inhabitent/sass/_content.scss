@@ -63,7 +63,8 @@
 }
 
 .post , .post-12 {
-	padding-top: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	// padding-left: 4rem;
 	padding-right: 4rem;
 	// margin-left: 13rem;
@@ -100,6 +101,12 @@
 			background-color: $brand_green;
 			padding: 5px 20px;
 		}
+	}
+}
+
+.single-post {
+	.widget-area {
+		width: 140%;
 	}
 }
 
@@ -141,7 +148,12 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		.site-logo {}
+		.site-logo {
+			img {
+				height: 50px;
+				width: 280px;
+			}
+		}
 		.secondary {
 			display: flex;
 			justify-content: space-around;
@@ -307,13 +319,20 @@
 .archive-container .page-header {
 	border-bottom: $border_dashed;
 	margin-bottom: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .term-list {
 	list-style-type: none;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin: 1rem 0;
+	width: 30%;
+	text-transform: uppercase;
+	font-family: $font__accent;
+	font-size: 1.1rem;
 
 }
 
