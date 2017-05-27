@@ -33,7 +33,7 @@ get_header(); ?>
 
                              <div class="product-info">
                                 <?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>
-                                <span>$<?php echo CFS()->get( 'price' ); ?></span>
+                                <span class="price">$<?php echo CFS()->get( 'price' ); ?></span>
                             </div><!-- .entry-content -->
                         </article><!-- #post-## -->
 

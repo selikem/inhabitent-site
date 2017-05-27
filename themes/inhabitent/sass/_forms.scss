@@ -19,12 +19,12 @@ input[type="submit"] {
 	text-transform: uppercase;
 
 	&:hover {
-		border-color: #ccc #bbb #aaa;
+		background-color: $brand_green_dark;
 	}
 
 	&:active,
 	&:focus {
-		border-color: #aaa #bbb #bbb;
+		background-color: $brand_green_dark;
 	}
 }
 
@@ -37,7 +37,8 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
-	border: 1px solid #ccc;
+	background-color: #f4f4f4;
+	border: $border_solid;
 	border-radius: 3px;
 
 	&:focus {

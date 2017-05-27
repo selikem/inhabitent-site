@@ -41,8 +41,8 @@ get_header(); ?>
                             </div><!-- .entry-header -->
 
                              <div class="product-info">
-                                <?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>
-                                <span>$<?php echo CFS()->get( 'price' ); ?></span>
+                                <?php the_title( sprintf( '<h2 class="entry-title">' ), '</h2>' ); ?>
+                                <span class="price">$<?php echo CFS()->get( 'price' ); ?></span>
                             </div><!-- .entry-content -->
                         </article><!-- #post-## -->
 

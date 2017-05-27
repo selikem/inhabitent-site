@@ -203,3 +203,29 @@ a {
 		border: 0;
 	}
 }
+
+.page-numbers {
+	color: $brand_white !important;
+	background-color: $brand_green;
+	padding: 0.2rem 0.4rem;
+	&:hover, &:active, &:focus {
+		background-color: $brand_green_dark;
+	}
+}
+
+.page-numbers.current {
+	background-color: $brand_grey_medium;
+}
+
+.social-links {
+	text-transform: uppercase;
+	font-family: $font__accent;
+	font-size: 0.9rem;
+}
+
+.green-btn {
+	color: $brand_white;
+	background-color: $brand_green;
+	padding: 0.5rem 1rem;
+
+}

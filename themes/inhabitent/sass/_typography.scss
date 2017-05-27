@@ -18,6 +18,15 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family: $font__accent;
+	text-transform: uppercase;
+}
+
+.site-main h2 {
+	font-size: 2.2rem;
+}
+
+.site-main h3 {
+	font-size: 1.8rem;
 }
 
 /* Copy */

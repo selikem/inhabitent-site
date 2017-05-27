@@ -14,7 +14,8 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
+			<?php get_template_part('template-parts/content', 'social-links'); ?>
+
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
