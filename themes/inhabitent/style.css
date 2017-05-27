@@ -1083,7 +1083,7 @@ a {
   border-bottom: 1px solid #e1e1e1;
   text-align: left; }
 
-.single .site-main, .blog .site-main, .category .site-main, .tag .site-main {
+.error404 .site-main, .single .site-main, .blog .site-main, .category .site-main, .tag .site-main {
   padding-top: 5rem; }
 
 .single-product .entry-title {
@@ -1104,6 +1104,9 @@ a {
     font-size: 1.8rem;
     text-transform: uppercase;
     font-family: "novocento", Courier, monospace; }
+
+.error404 .widgettitle, .error404 .widget-title {
+  font-size: 1.5rem; }
 
 /*--------------------------------------------------------------
 # Media

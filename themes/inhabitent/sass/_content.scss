@@ -462,7 +462,7 @@
 	}
 }
 
-.single, .blog, .category, .tag {
+.error404, .single, .blog, .category, .tag {
 	.site-main {
 		padding-top: 5rem;
 	}
@@ -488,6 +488,12 @@
 			font-family: $font__accent;
 
 		}
+	}
+}
+
+.error404 {
+	.widgettitle, .widget-title {
+		font-size: 1.5rem;
 	}
 }
 
