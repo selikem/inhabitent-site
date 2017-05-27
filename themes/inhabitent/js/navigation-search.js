@@ -1,8 +1,14 @@
-jQuery(function () {
+(function($) {
+    $(function () {
 
-    jQuery('.search-field').hide();
-    jQuery('.search-toggle').on('click', function(event){
-        event.preventDefault();
-        jQuery('.search-field').toggle('fast');
+        $('.nav-search-field').hide();
+        $('.search-toggle').on('click', function(event){
+            event.preventDefault();
+            $('.nav-search-field').toggle('fast');
+            $('.nav-search-field').focus();
+        });
+        $('.nav-search-field').blur(function() {
+            $('.nav-search-field').hide('fast');
+        })
     });
-});
+})(jQuery);

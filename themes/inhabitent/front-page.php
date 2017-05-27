@@ -29,26 +29,59 @@ get_header(); ?>
 
             </section>
             <section class="latest-entries">
-            <h2>Inhabitent Journal</h2>
-            <ul>
-                <?php foreach ( $products as $post ) : setup_postdata( $post ); ?>
-                    <li>
-                        <div class="thumbnail-wrapper">
-                            <?php if ( has_post_thumbnail() ) : ?>
-                                <?php the_post_thumbnail('large'); ?>
-                            <?php endif; ?>
-                        </div>
-                        <div class="product-info-wrapper">
-                            <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-                            <h3><?php the_title()?></h3>
-                            <a class="black-btn" href="<?php the_permalink()?>">Read Entry</a>
-                        </div>
-                    </li>
-                <?php endforeach; wp_reset_postdata(); ?>
-            </ul>
+                <h2>Inhabitent Journal</h2>
+                <ul>
+                    <?php foreach ( $products as $post ) : setup_postdata( $post ); ?>
+                        <li>
+                            <div class="thumbnail-wrapper">
+                                <?php if ( has_post_thumbnail() ) : ?>
+                                    <?php the_post_thumbnail('large'); ?>
+                                <?php endif; ?>
+                            </div>
+                            <div class="product-info-wrapper">
+                                <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+                                <h3><?php the_title()?></h3>
+                                <a class="black-btn" href="<?php the_permalink()?>">Read Entry</a>
+                            </div>
+                        </li>
+                    <?php endforeach; wp_reset_postdata(); ?>
+                </ul>
             </section>
             <section class="adventures">
-
+                <h2>Adventures</h2>
+                <div class="adventure-row adventure-row-1">
+                    <div class="adventure-item adventure-item-1" style="background: linear-gradient( 0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)) no-repeat, url('<?php echo get_template_directory_uri()?>/images/adventure-photos/canoe-girl.jpg') no-repeat center; background-size: cover, cover;">
+                        <div class="adventure-info">
+                            <h2>Getting Back to Nature in a Canoe</h2>
+                            <a class="white-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="adventure-col">
+                        <div class="adventure-item adventure-item-2" style="background: linear-gradient( 0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)) no-repeat, url('<?php echo get_template_directory_uri()?>/images/adventure-photos/beach-bonfire.jpg') no-repeat center; background-size: cover, cover;">
+                            <div class="adventure-info">
+                                <h2>A Night with Friends at the Beach</h2>
+                                <a class="white-btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="adventure-row adventure-row-2">
+                            <div class="adventure-item adventure-item-3" style="background: linear-gradient( 0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)) no-repeat, url('<?php echo get_template_directory_uri()?>/images/adventure-photos/mountain-hikers.jpg') no-repeat center; background-size: cover, cover;">
+                                <div class="adventure-info">
+                                    <h2>Taking in the View at Big Mountain</h2>
+                                    <a class="white-btn" href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="adventure-item adventure-item-4" style="background: linear-gradient( 0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)) no-repeat, url('<?php echo get_template_directory_uri()?>/images/adventure-photos/night-sky.jpg') no-repeat center; background-size: cover, cover;">
+                                <div class="adventure-info">
+                                    <h2>Star-Gazing at the Night Sky</h2>
+                                    <a class="white-btn" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="see-more">
+                    <a href="#" class="green-btn">More Adventures</a>
+                </p>
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

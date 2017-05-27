@@ -24,18 +24,19 @@
 				<div class="site-branding">
 					<div class="logo"><a href=<?php bloginfo('url') ?> rel="home"><h1 class="site-title">Inhabitent</h1></a></div>
 				</div><!-- .site-branding -->
-
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
-				<div class="header-search">
-					<form action="<?php echo get_site_url()?>" class="search-form" method="get">
-						<a href="#" class="search-toggle">
-							<i class="fa fa-search" aria-hidden="true"></i>
-						</a>
-						<input type="search" class="search-field" placeholder="Type and hit enter..." name="s" title="Search for:">
-					</form>
+				<div class="nav-and-search-container">
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					</nav><!-- #site-navigation -->
+					<div class="header-search">
+						<form action="<?php echo get_site_url()?>" class="search-form" method="get">
+							<a href="#" class="search-toggle">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</a>
+							<input type="search" class="nav-search-field" placeholder="Type and hit enter..." name="s" title="Search for:">
+						</form>
+					</div>
 				</div>
 			</header><!-- #masthead -->
 
