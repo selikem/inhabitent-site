@@ -195,6 +195,12 @@
 	}
 }
 
+.page-template-about {
+	.entry-title {
+		font-size: 3rem;
+	}
+}
+
 
 .tax-product-type .site-content {
 	width: auto;
@@ -252,6 +258,7 @@
 		}
 		.price {
 			background: #fff;
+			padding-left: 0.15rem;
 		}
 		
 	}

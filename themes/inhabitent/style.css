@@ -344,7 +344,7 @@ a {
   text-transform: uppercase; }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   text-transform: uppercase; }
 
 /*--------------------------------------------------------------
@@ -897,6 +897,9 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
 
+.page-template-about .entry-title {
+  font-size: 3rem; }
+
 .tax-product-type .site-content {
   width: auto;
   margin: 0; }
@@ -953,7 +956,8 @@ a {
     content: "...............................................";
     z-index: -1; }
   .product-grid .product-grid-item .price {
-    background: #fff; }
+    background: #fff;
+    padding-left: 0.15rem; }
   .product-grid .thumbnail-wrapper {
     position: relative;
     height: 250px;
@@ -1175,7 +1179,8 @@ object {
   padding: 0.75rem; }
   .home .latest-entries .post-info-wrapper p {
     font-size: 0.75rem;
-    line-height: 1; }
+    line-height: 1;
+    margin: 0; }
 
 .home .adventures {
   height: 50rem; }
