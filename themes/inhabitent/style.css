@@ -587,7 +587,7 @@ a {
   display: block; }
 
 .nav-search-field {
-  background: transparent;
+  background-color: transparent !important;
   font-family: "novocento", Courier, monospace;
   outline: none;
   border: 0; }
