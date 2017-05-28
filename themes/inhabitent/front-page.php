@@ -52,7 +52,7 @@ get_header(); ?>
                 </ul>
             </section>
             <section class="adventures">
-                <h2>Adventures</h2>
+                <h2>Latest Adventures</h2>
                 <div class="adventure-row adventure-row-1">
                     <div class="adventure-item adventure-item-1" style="background: linear-gradient( 0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)) no-repeat, url('<?php echo get_template_directory_uri()?>/images/adventure-photos/canoe-girl.jpg') no-repeat center; background-size: cover, cover;">
                         <div class="adventure-info">
