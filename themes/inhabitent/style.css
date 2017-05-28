@@ -617,9 +617,26 @@ a {
   font-size: 0.9rem; }
 
 .green-btn {
-  color: #fff;
+  color: #fff !important;
   background-color: #248A83;
-  padding: 0.5rem 1rem; }
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+  font-family: "novocento", Courier, monospace;
+  font-size: 0.9rem; }
+  .green-btn:hover, .green-btn:visited, .green-btn:active, .green-btn:focus {
+    color: #fff; }
+  .green-btn:hover {
+    background-color: #247A83; }
+
+.white-btn {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: "novocento", Courier, monospace; }
+  .white-btn:hover, .white-btn:visited, .white-btn:active, .white-btn:focus {
+    color: #fff; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -917,8 +934,10 @@ a {
     width: 0;
     float: left;
     white-space: nowrap;
-    content: "..........................................";
+    content: "...............................................";
     z-index: -1; }
+  .product-grid .product-grid-item .price {
+    background: #fff; }
   .product-grid .thumbnail-wrapper {
     position: relative;
     height: 250px;
@@ -975,35 +994,6 @@ a {
   -ms-flex-align: center;
       align-items: center; }
 
-.latest-entries ul {
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  margin-bottom: 0;
-  margin-left: 0;
-  padding-left: 0; }
-
-.latest-entries li {
-  border: 1px solid #e1e1e1;
-  -ms-flex: 1 0 32%;
-      flex: 1 0 32%; }
-
-.latest-entries .thumbnail-wrapper {
-  height: 250px;
-  position: relative;
-  background-color: #a1a1a1;
-  overflow: hidden; }
-  .latest-entries .thumbnail-wrapper img {
-    max-height: 250px;
-    max-width: none;
-    width: auto;
-    transform: translate(-50%, -52%);
-    position: absolute;
-    top: 50%;
-    left: 50%; }
-
 .archive-container .page-header {
   border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 3rem;
@@ -1038,44 +1028,6 @@ a {
   .wpcf7-form label span {
     color: #d99054; }
 
-.adventures {
-  height: 50rem; }
-  .adventures .adventure-row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-  .adventures .adventure-row-1 {
-    height: 540px; }
-  .adventures .adventure-row-2 {
-    height: 270px; }
-  .adventures .adventure-col {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-  .adventures .adventure-item {
-    box-sizing: border-box;
-    border: 1rem solid #fff;
-    -ms-flex: 1 0 50%;
-        flex: 1 0 50%;
-    background-size: cover, cover;
-    background-repeat: no-repeat, no-repeat;
-    color: #fff; }
-    .adventures .adventure-item .adventure-info {
-      padding: 1rem 1rem; }
-    .adventures .adventure-item h2 {
-      font-family: "merriweather", Courier, monospace;
-      font-weight: normal; }
-  .adventures .adventure-item-1 h2 {
-    font-size: 3rem; }
-  .adventures .adventure-item-2 h2 {
-    font-size: 2.4rem; }
-  .adventures .adventure-item-3 h2, .adventures .adventure-item-4 h2 {
-    font-size: 1.6rem; }
-
 .search .site-main, .category .site-main, .tag .site-main {
   margin-right: 4rem; }
 
@@ -1085,28 +1037,6 @@ a {
 
 .error404 .site-main, .single .site-main, .blog .site-main, .category .site-main, .tag .site-main {
   padding-top: 5rem; }
-
-.single-product .entry-title {
-  color: #d99054; }
-
-.single-product .hentry {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center; }
-  .single-product .hentry .product-image-wrapper {
-    width: 48%; }
-  .single-product .hentry .product-info-wrapper {
-    width: 48%; }
-  .single-product .hentry .price {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-family: "novocento", Courier, monospace; }
-
-.error404 .widgettitle, .error404 .widget-title {
-  font-size: 1.5rem; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1172,3 +1102,139 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home h2 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin-bottom: 3.75rem;
+  text-align: center; }
+
+.home section {
+  margin-bottom: 3.75rem; }
+
+.home .product-info .product-type-items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center; }
+  .home .product-info .product-type-items .product-type-item {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    -ms-flex: 0 1 23.5%;
+        flex: 0 1 23.5%;
+    max-width: 23.5%;
+    padding: 0.75rem; }
+    .home .product-info .product-type-items .product-type-item img {
+      height: 70px;
+      width: 70px; }
+
+.home .latest-entries h3 {
+  font-size: 1.3rem; }
+
+.home .latest-entries ul {
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0; }
+
+.home .latest-entries li {
+  border: 1px solid #e1e1e1;
+  -ms-flex: 1 0 32%;
+      flex: 1 0 32%;
+  position: relative;
+  max-width: 30%; }
+
+.home .latest-entries .thumbnail-wrapper {
+  height: 250px;
+  position: relative;
+  background-color: #a1a1a1;
+  overflow: hidden; }
+  .home .latest-entries .thumbnail-wrapper img {
+    max-height: 250px;
+    max-width: none;
+    width: auto;
+    transform: translate(-50%, -52%);
+    position: absolute;
+    top: 50%;
+    left: 50%; }
+
+.home .latest-entries .post-info-wrapper {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0.75rem; }
+  .home .latest-entries .post-info-wrapper p {
+    font-size: 0.75rem;
+    line-height: 1; }
+
+.home .adventures {
+  height: 50rem; }
+  .home .adventures .green-btn {
+    font-size: 1.2rem; }
+  .home .adventures .adventure-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .home .adventures .adventure-row-1 {
+    height: 540px; }
+  .home .adventures .adventure-row-2 {
+    height: 270px; }
+  .home .adventures .adventure-col {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .home .adventures .adventure-item {
+    box-sizing: border-box;
+    border: 0.75rem solid #fff;
+    -ms-flex: 1 0 50%;
+        flex: 1 0 50%;
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    color: #fff; }
+    .home .adventures .adventure-item .adventure-info {
+      padding: 1rem 1rem; }
+    .home .adventures .adventure-item h2 {
+      font-family: "merriweather", Courier, monospace;
+      font-weight: normal;
+      text-transform: none;
+      text-align: left;
+      margin: 1.5rem 0; }
+  .home .adventures .adventure-item-1 h2 {
+    font-size: 3rem; }
+  .home .adventures .adventure-item-2 h2 {
+    font-size: 2.4rem; }
+  .home .adventures .adventure-item-3 h2, .home .adventures .adventure-item-4 h2 {
+    font-size: 1.6rem; }
+
+/* 404 page */
+.error404 .widgettitle, .error404 .widget-title {
+  font-size: 1.5rem; }
+
+/* single product page*/
+.single-product .entry-title {
+  color: #d99054; }
+
+.single-product .hentry {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+  .single-product .hentry .product-image-wrapper {
+    width: 48%; }
+  .single-product .hentry .product-info-wrapper {
+    width: 48%; }
+  .single-product .hentry .price {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: "novocento", Courier, monospace; }

@@ -224,8 +224,29 @@ a {
 }
 
 .green-btn {
-	color: $brand_white;
+	color: $brand_white !important;
 	background-color: $brand_green;
-	padding: 0.5rem 1rem;
+	padding: 0.75rem 1rem;
+	text-transform: uppercase;
+	font-family: $font__accent;
+	font-size: 0.9rem;
+	&:hover, &:visited, &:active, &:focus {
+		color: $brand_white;
+	}
+	&:hover {
+		background-color: $brand_green_dark;
+	}
 
+}
+
+.white-btn {
+	color: $brand-white;
+	border: 1px solid #fff;
+	padding: 0.75rem 1rem;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	font-family: $font__accent;
+	&:hover, &:visited, &:active, &:focus {
+		color: $brand_white;
+	}
 }

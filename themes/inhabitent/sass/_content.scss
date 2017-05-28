@@ -246,8 +246,11 @@
 			width: 0;
 			float: left;
 			white-space: nowrap;
-			content: "..........................................";
+			content: "...............................................";
 			z-index: -1;
+		}
+		.price {
+			background: #fff;
 		}
 		
 	}
@@ -317,36 +320,6 @@
 	align-items: center;
 }
 
-.latest-entries {
-	ul {
-		display: flex;
-		list-style-type: none;
-		justify-content: space-between;
-		margin-bottom: 0;
-		margin-left: 0;
-		padding-left: 0;
-
-	}
-	li {
-		border: $border_solid;
-		flex: 1 0 32%;
-	}
-	.thumbnail-wrapper {
-		height: 250px;
-		position: relative;
-		background-color: $brand_grey_light;
-		overflow: hidden;
-		img {
-			max-height: 250px;
-			max-width: none;
-			width: auto;
-			transform: translate(-50%, -52%);
-			position: absolute;
-			top: 50%;
-			left: 50%
-		}
-	}
-}
 
 .archive-container .page-header {
 	border-bottom: $border_dashed;
@@ -388,68 +361,6 @@
 	}
 }
 
-.adventures {
-	height: 50rem;
-
-	.adventure-row {
-		display: flex;
-		justify-content: space-between;
-
-	}
-
-	.adventure-row-1 {
-		height: 540px;
-	}
-	.adventure-row-2 {
-		height: 270px;
-	}
-
-	.adventure-col {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
-	.adventure-item {
-		box-sizing: border-box;
-		border: 1rem solid #fff;
-		flex: 1 0 50%;
-		background-size: cover, cover;
-		background-repeat: no-repeat, no-repeat;
-		color: $brand_white;
-		.adventure-info {
-			padding: 1rem 1rem;
-		}
-	
-
-		h2 {
-			font-family: $font__main;
-			font-weight: normal;
-		}
-
-
-	}
-
-	.adventure-item-1 {
-		h2 {
-			font-size: 3rem;
-		}
-	}
-
-	.adventure-item-2 {
-		h2 {
-			font-size: 2.4rem;
-		}
-	}
-
-	.adventure-item-3 , .adventure-item-4 {
-		h2 {
-			font-size: 1.6rem;
-		}
-	}
-
-}
-
 .search, .category, .tag {
 	.site-main {
 		margin-right: 4rem;
@@ -468,32 +379,6 @@
 	}
 }
 
-.single-product {
-	.entry-title {
-		color: $brand_orange;
-	}
-	.hentry {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		.product-image-wrapper {
-			width: 48%;
-		}
-		.product-info-wrapper {
-			width: 48%;
-		}
-		.price {
-			font-size: 1.8rem;
-			text-transform: uppercase;
-			font-family: $font__accent;
 
-		}
-	}
-}
 
-.error404 {
-	.widgettitle, .widget-title {
-		font-size: 1.5rem;
-	}
-}
 

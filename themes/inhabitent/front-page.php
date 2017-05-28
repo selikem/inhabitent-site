@@ -18,15 +18,19 @@ get_header(); ?>
                 <img src="<?php echo get_template_directory_uri() ?>/images/inhabitent-logo-full.svg" alt="Inhabitent full logo" class="logo">
             </section>
             <section class="product-info">
-                <?php $product_types = get_terms(array('taxonomy' => 'product-type', 'hide_empty' => 0));
-                    if(!empty($product_types)&& !is_wp_error($product_types)) :?>
-                    <?php foreach($product_types as $product_type) :?>
-                        <img src="<?php echo get_template_directory_uri()?>/images/<?php echo $product_type->name ?>.svg" alt="term-logo">
-                        <?php echo $product_type->description?>
-                        <a class="green-btn" href="<?php echo get_term_link($product_type);?>"><h3><?php echo $product_type->name?> Stuff</h3></a>
-                    <?php endforeach;?>
-                <?php endif; ?>
-
+                <h2>Shop Stuff</h2>
+                <div class="product-type-items">
+                    <?php $product_types = get_terms(array('taxonomy' => 'product-type', 'hide_empty' => 0));
+                        if(!empty($product_types)&& !is_wp_error($product_types)) :?>
+                        <?php foreach($product_types as $product_type) :?>
+                            <div class="product-type-item">
+                                <img src="<?php echo get_template_directory_uri()?>/images/<?php echo $product_type->name ?>.svg" alt="term-logo">
+                                <p><?php echo $product_type->description?></p>
+                                <p><a class="green-btn"  href="<?php echo get_term_link($product_type);?>"><?php echo $product_type->name?> Stuff</a></p>
+                            </div>
+                        <?php endforeach;?>
+                    <?php endif; ?>
+                </div>
             </section>
             <section class="latest-entries">
                 <h2>Inhabitent Journal</h2>
@@ -38,9 +42,9 @@ get_header(); ?>
                                     <?php the_post_thumbnail('large'); ?>
                                 <?php endif; ?>
                             </div>
-                            <div class="product-info-wrapper">
-                                <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-                                <h3><?php the_title()?></h3>
+                            <div class="post-info-wrapper">
+                                <p><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p>
+                                <a href="<?php the_permalink()?>"><h3><?php the_title()?></h3></a>
                                 <a class="black-btn" href="<?php the_permalink()?>">Read Entry</a>
                             </div>
                         </li>
