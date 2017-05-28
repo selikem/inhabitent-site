@@ -285,7 +285,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 .site-main h2 {
-  font-size: 2.2rem; }
+  font-size: 2.2rem;
+  color: #2f1339; }
 
 .site-main h3 {
   font-size: 1.8rem; }
@@ -426,7 +427,7 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    background-color: #247A83; }
+    background-color: #19625D; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -434,7 +435,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    background-color: #247A83; }
+    background-color: #19625D; }
 
 /* Fields */
 input[type="text"],
@@ -607,7 +608,7 @@ a {
   background-color: #248A83;
   padding: 0.2rem 0.4rem; }
   .page-numbers:hover, .page-numbers:active, .page-numbers:focus {
-    background-color: #247A83; }
+    background-color: #19625D; }
 
 .page-numbers.current {
   background-color: #808080; }
@@ -616,6 +617,16 @@ a {
   text-transform: uppercase;
   font-family: "novocento", Courier, monospace;
   font-size: 0.9rem; }
+
+.site-content .black-btn, .site-content .read-more {
+  border: 1px solid #000;
+  color: #000;
+  padding: 0.5rem 1rem;
+  background: #fff; }
+  .site-content .black-btn:hover, .site-content .black-btn:active, .site-content .black-btn:focus, .site-content .read-more:hover, .site-content .read-more:active, .site-content .read-more:focus {
+    background: #248A83;
+    border: 1px solid #248A83;
+    color: #fff; }
 
 .green-btn {
   color: #fff !important;
@@ -627,7 +638,7 @@ a {
   .green-btn:hover, .green-btn:visited, .green-btn:active, .green-btn:focus {
     color: #fff; }
   .green-btn:hover {
-    background-color: #247A83; }
+    background-color: #19625D; }
 
 .white-btn {
   color: #fff;
@@ -975,17 +986,6 @@ a {
 .page-header h1 {
   text-align: center; }
 
-.site-content .black-btn, .site-content .read-more {
-  border: 1px solid #000;
-  color: #000;
-  padding: 0.5rem 1rem; }
-  .site-content .black-btn a, .site-content .read-more a {
-    color: #000; }
-  .site-content .black-btn:hover, .site-content .black-btn:active, .site-content .black-btn:focus, .site-content .read-more:hover, .site-content .read-more:active, .site-content .read-more:focus {
-    background: #248A83;
-    border: 1px solid #248A83;
-    color: #fff; }
-
 .home-hero {
   height: 100vh;
   width: 100vw !important;
@@ -1209,7 +1209,8 @@ object {
       font-weight: normal;
       text-transform: none;
       text-align: left;
-      margin: 1.5rem 0; }
+      margin: 1.5rem 0;
+      color: #fff; }
   .home .adventures .adventure-item-1 h2 {
     font-size: 3rem; }
   .home .adventures .adventure-item-2 h2 {

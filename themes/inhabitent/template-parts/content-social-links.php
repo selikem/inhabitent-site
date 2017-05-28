@@ -9,7 +9,7 @@
 
 
 <div class="social-links">
-    <a href="#" class="social-link black-btn"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a>
-    <a href="#" class="social-link black-btn"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>
-    <a href="#" class="social-link black-btn"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</a>
+    <button class="social-link black-btn"><i class="fa fa-facebook" aria-hidden="true"></i> Like</button>
+    <button class="social-link black-btn"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</button>
+    <button class="social-link black-btn"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</button>
 </div>

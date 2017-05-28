@@ -298,20 +298,6 @@
 	text-align: center;
 }
 
-.site-content .black-btn, .site-content .read-more {
-	border: 1px solid #000;
-	color: #000;
-	padding: 0.5rem 1rem;
-	a {
-		color: #000;
-	}
-	&:hover, &:active, &:focus {
-		background: $brand_green;
-		border: 1px solid $brand_green;
-		color: $brand_white;
-	}
-
-}
 
 .home-hero {
 	height: 100vh;

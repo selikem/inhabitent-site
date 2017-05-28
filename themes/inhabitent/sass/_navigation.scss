@@ -224,6 +224,20 @@ a {
 	font-size: 0.9rem;
 }
 
+.site-content .black-btn, .site-content .read-more {
+	border: 1px solid #000;
+	color: #000;
+	padding: 0.5rem 1rem;
+	background: $brand_white;
+	&:hover, &:active, &:focus {
+		background: $brand_green;
+		border: 1px solid $brand_green;
+		color: $brand_white;
+	}
+
+}
+
+
 .green-btn {
 	color: $brand_white !important;
 	background-color: $brand_green;
