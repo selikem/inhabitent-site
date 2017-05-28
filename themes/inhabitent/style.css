@@ -851,9 +851,10 @@ a {
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center; }
+    -ms-flex-align: start;
+        align-items: flex-start; }
     .site-footer .footer-container .site-logo img {
+      margin-top: 3.75rem;
       height: 50px;
       width: 280px; }
     .site-footer .footer-container .secondary {
