@@ -1,11 +1,11 @@
-#Inhabitent project
+# Inhabitent project
 
 - Create a multi-page website with a blog for a camping supply company called Inhabitent Camping Supply Co. using WordPress as a content management system.
 
 ![screenshot of Inhabitent homepage](./screenshot.png)
 
 
-##Technologies Used
+## Technologies Used
 
 - git
 - gulp
@@ -22,7 +22,7 @@
 - WP Migrate DB
 
 
-##Personal Learnings
+## Personal Learnings
 
 - how to manage content using a CMS like wordpress.
 - how to build/edit a wordpress theme.
