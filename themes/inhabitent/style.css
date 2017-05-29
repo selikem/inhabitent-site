@@ -625,7 +625,9 @@ a {
   border: 1px solid #000;
   color: #000;
   padding: 0.5rem 1rem;
-  background: #fff; }
+  background: #fff;
+  font-family: "novocento", Courier, monospace;
+  text-transform: uppercase; }
   .site-content .black-btn:hover, .site-content .black-btn:active, .site-content .black-btn:focus, .site-content .read-more:hover, .site-content .read-more:active, .site-content .read-more:focus {
     background: #248A83;
     border: 1px solid #248A83;
