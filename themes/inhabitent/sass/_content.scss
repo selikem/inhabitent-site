@@ -61,7 +61,7 @@
 .site-content {
 	display: flex;
 	justify-content: space-between;
-	width: 1120px;
+	width: 1150px;
 }
 
 .post , .post-12 {
@@ -125,7 +125,7 @@
 
 .widget-area {
 	border-left: $border_solid;
-	width: 100%;
+	// width: 100%;
 	padding-left: 4rem;
 	// margin-right: 6rem;
 	margin-top: 3rem;

@@ -128,3 +128,14 @@ function inhabitent_archive_title( $title ) {
 }
  
 add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );
+
+function inhabitent_about_hero_style() {
+	$about_hero_url = CFS()->get( 'hero_image' );
+	$about_hero_style = ".custom-hero {
+		background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url($about_hero_url) no-repeat center bottom;
+		background-size: cover, cover;
+	}";
+	wp_add_inline_style('inhabitent-style', $about_hero_style);
+}
+
+add_action( 'wp_enqueue_scripts', 'inhabitent_about_hero_style' );
